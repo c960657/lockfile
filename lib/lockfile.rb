@@ -190,7 +190,6 @@ unless(defined?($__lockfile__) or defined?(Lockfile))
       @basename = File.basename @path
       @thief    = false
       @locked   = false
-      @refrsher = nil
 
       lock(&block) if block
     end
